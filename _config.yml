@@ -1,2 +1,16 @@
-name: Gabriel Schütz de Souza
+title: Gabriel Schütz
+name: Gabriel Schütz
+description: >-
+  Payment Infrastructure & Financial Systems Engineer — Stripe Connect, SEPA,
+  DATEV, SAP-FI, XRechnung. Six years owning the money layer of a German
+  aviation SaaS. Available, 100% remote.
+url: https://gabrielschutz.de
+lang: en
 markdown: kramdown
+
+# Hand-rolled SEO (meta/canonical/hreflang/OG in _layouts/default.html) and a
+# static sitemap.xml — no Jekyll plugins needed, fully GitHub-Pages-safe.
+exclude:
+  - README.md
+  - cv-en.src.html
+  - cv-de.src.html

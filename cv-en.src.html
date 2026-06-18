@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Gabriel Schütz de Souza — CV</title>
+<style>
+  @page { size: Letter; margin: 14mm 15mm 13mm; }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 10.2pt;
+    line-height: 1.4;
+    color: #1c2027;
+  }
+  a { color: #145f78; text-decoration: none; }
+  .name {
+    font-size: 23pt; font-weight: 700; letter-spacing: -0.3pt;
+    margin: 0; color: #16191f;
+  }
+  .role {
+    font-size: 11.5pt; font-weight: 700; color: #176b86;
+    margin: 3pt 0 7pt;
+  }
+  .contact { font-size: 9pt; color: #4a5360; margin: 0 0 2pt; }
+  .contact a { color: #145f78; }
+  .langs-line { font-size: 9pt; color: #4a5360; margin: 0 0 9pt; }
+  .summary { margin: 0 0 4pt; }
+  hr { border: 0; border-top: 0.6pt solid #d7dbe1; margin: 9pt 0 8pt; }
+  h2 {
+    font-size: 9pt; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 1.2pt; color: #176b86; margin: 11pt 0 5pt;
+  }
+  h3 { font-size: 10.6pt; font-weight: 700; margin: 0; color: #16191f; }
+  .job-meta { font-size: 9pt; color: #4a5360; margin: 1pt 0 5pt; }
+  .job-intro { margin: 0 0 5pt; }
+  ul { margin: 3pt 0 0; padding-left: 15pt; }
+  li { margin: 0 0 4pt; }
+  p { margin: 0 0 4pt; }
+  b, strong { font-weight: 700; color: #16191f; }
+  .edu-list, .edu-list li { margin-bottom: 3pt; }
+  .stack-line { margin: 0; }
+  .awards { margin: 0; color: #2a313b; }
+</style>
+</head>
+<body>
+  <h1 class="name">Gabriel Schütz de Souza</h1>
+  <p class="role">Payment Infrastructure &amp; Financial Systems Engineer</p>
+  <p class="contact">gbrl.schutz@gmail.com &middot; Remote — Brazil (GMT-3, 1–2h ahead of US Eastern; full US-hours overlap) &middot; <a href="https://gabrielschutz.de">gabrielschutz.de</a> &middot; <a href="https://www.linkedin.com/in/gabriel-schuetz">linkedin.com/in/gabriel-schuetz</a></p>
+  <p class="langs-line">English &middot; German (fluent, TestDaF 5/5/5/4) &middot; Portuguese (native) &middot; French (B2)</p>
+
+  <p class="summary">Six years owning revenue-critical payment and compliance systems in production for a German aviation SaaS: Stripe Connect pipelines, SEPA, multi-currency reconciliation, EU e-invoicing, and German tax integration — domains where errors have legal and financial consequences. AI-augmented workflow; one of three core developers who keep the entire platform running.</p>
+
+  <hr>
+
+  <h2>Core Expertise</h2>
+  <ul>
+    <li><b>Payments:</b> Stripe Connect (destination charges, automated partner payouts, webhooks, 3D Secure), SEPA mandate lifecycle, multi-currency (EUR/CHF), refund &amp; dispute handling, idempotent double-charge prevention</li>
+    <li><b>Billing &amp; reconciliation:</b> bank-statement import with automated invoice matching (invoice number + amount + customer number), MTOW-based airport-fee engine, dunning (Mahnwesen), periodical &amp; recurring invoicing, audit-ready invoice sequencing</li>
+    <li><b>Regulatory compliance:</b> EU e-invoicing (XRechnung / EN 16931), German accounting integration (DATEV), SAP FI (RFBIBL) interface to customer production go-lives, BMD (Austria) / CEGID (France) exports, VAT &amp; reverse-charge handling</li>
+    <li><b>AI-augmented engineering:</b> agentic PR review, pre-deploy impact analysis, AI-built tooling, large-scale migrations (Claude Code in daily production use)</li>
+  </ul>
+
+  <h2>Experience</h2>
+  <h3>Senior Software Engineer — Payments &amp; Financial Systems</h3>
+  <p class="job-meta"><b>aerops GmbH</b> (German aviation SaaS, 350+ airfields) &middot; Jul 2020 – 2026 &middot; Remote contract (via own consultancy)</p>
+  <p class="job-intro">Principal owner of the platform's payments, billing, and financial-compliance layer — sole developer of its accounting-export suite (DATEV, SAP, BMD, CEGID), e-invoicing, dunning, and document dispatch; one of three core developers.</p>
+  <ul>
+    <li>Built and operated the <b>airport-fee billing system</b> for the DFS Aviation Services (DAS) contract — MTOW-based fee calculation, customer matching, invoice generation, shop integration — which has <b>invoiced and collected €62.9M in airport fees</b> (all-time; mostly bank/SEPA-settled). Bootstrapped it solo in Node.js and scaled it with a developer I brought in and managed.</li>
+    <li>Own the German/EU <b>financial-compliance export suite</b> end-to-end: <b>DATEV</b> accounting integration, <b>XRechnung</b> e-invoicing (EN 16931, with validator), and a <b>SAP FI (RFBIBL/FAGU) interface taken solo to two customer production go-lives</b> (with formal written customer sign-offs), plus <b>BMD</b> (Austria) and <b>CEGID</b> (France) exports.</li>
+    <li>Principal owner of the <b>Stripe payment infrastructure</b> — Connect destination charges with automated partner payouts, SEPA mandates, 3D Secure, EUR/CHF, refunds &amp; disputes, idempotent double-charge prevention — handling <b>€8.47M</b> in gross volume across the platform.</li>
+    <li>Built the in-house <b>dunning (Mahnwesen)</b> microservice and the <b>bank-statement import + payment-matching</b> system (camt.052 / MT940 / CSV; auto-reconciles by invoice number + amount + customer number), plus periodical &amp; recurring invoicing.</li>
+    <li>Built a new per-airport <b>document-dispatch platform</b> (SMTP / Gmail-OAuth / Outlook-OAuth mailers with multi-tier fallback, template editor, DeepL multi-locale) replacing the legacy mailer; drove the Shopware → backend migration of the billing domain.</li>
+    <li>Fixed 504 timeouts on very large orders (2,000+ line items) via a batched article-append API + async invoicing; co-led the Laravel framework upgrade; <b>recovered a deleted production table from the raw database files</b> after an accidental deletion.</li>
+    <li>Run an <b>AI-augmented workflow in production</b> — Claude-based PR review, pre-deploy impact analysis, AI-built tooling — shipping fast while keeping full architectural ownership.</li>
+  </ul>
+
+  <h2>Technical Stack</h2>
+  <p class="stack-line"><b>Backend:</b> PHP/Laravel (primary), Node.js/Express &middot; <b>Frontend:</b> Vue.js, Angular &middot; <b>Data:</b> MySQL/MariaDB, MongoDB &middot; <b>Payments:</b> Stripe (Connect, Terminal, webhooks), SEPA &middot; <b>Compliance:</b> DATEV Connect, XRechnung &middot; <b>Infra:</b> Docker, GitHub Actions CI/CD &middot; <b>Testing:</b> PHPUnit, Codeception, Jest, PHPStan</p>
+
+  <h2>Education</h2>
+  <ul class="edu-list">
+    <li><b>B.Sc. Computer Science — Uniritter (Brazil)</b>, in progress, expected 2028</li>
+    <li>Prior CS coursework: <b>TU Dresden</b> (2019–2021, GPA 1.3 on the German scale — top marks); <b>UNISINOS</b> Computer Engineering (2017–2019)</li>
+  </ul>
+
+  <h2>Awards</h2>
+  <p class="awards">ICYS Gold Medal, Engineering — Stuttgart (2017) &middot; FEBRACE 2nd Place — São Paulo (2017) &middot; Weizmann Institute International Summer Science Institute scholarship (2016)</p>
+</body>
+</html>

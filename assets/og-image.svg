@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f5f6f8"/>
+  <!-- left photo panel placeholder (the real photo is composited over 0..392) -->
+  <rect x="0" y="0" width="392" height="630" fill="#e7eaee"/>
+  <rect x="392" y="0" width="6" height="630" fill="#176b86"/>
+
+  <text x="430" y="138" font-family="Helvetica, Arial, sans-serif" font-size="19" font-weight="700" letter-spacing="3" fill="#176b86">PAYMENT INFRASTRUCTURE &amp; FINANCIAL SYSTEMS</text>
+
+  <text x="426" y="232" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="600" letter-spacing="-1.5" fill="#20242c">Gabriel Schütz</text>
+
+  <text x="430" y="288" font-family="Helvetica, Arial, sans-serif" font-size="24" fill="#5a6473">Six years owning the money layer of a German aviation SaaS.</text>
+
+  <rect x="430" y="334" width="180" height="3" fill="#176b86"/>
+
+  <text x="430" y="412" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="600" letter-spacing="-1" fill="#145f78">Tens of millions<tspan font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="400" letter-spacing="0" fill="#5a6473" dx="16">billed &amp; collected</tspan></text>
+
+  <text x="430" y="468" font-family="Helvetica, Arial, sans-serif" font-size="23" fill="#5a6473">Stripe Connect&#160;&#160;·&#160;&#160;SEPA&#160;&#160;·&#160;&#160;DATEV&#160;&#160;·&#160;&#160;SAP-FI&#160;&#160;·&#160;&#160;XRechnung</text>
+
+  <text x="430" y="556" font-family="Helvetica, Arial, sans-serif" font-size="23" fill="#20242c"><tspan font-weight="700">gabrielschutz.de</tspan><tspan fill="#5a6473" font-weight="400" dx="12">·&#160;&#160;Available now&#160;&#160;·&#160;&#160;100% remote</tspan></text>
+</svg>
