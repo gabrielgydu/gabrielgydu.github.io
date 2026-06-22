@@ -1,9 +1,8 @@
 title: Gabriel Schütz
 name: Gabriel Schütz
 description: >-
-  Payment Infrastructure & Financial Systems Engineer — Stripe Connect, SEPA,
-  DATEV, SAP-FI, XRechnung. Six years owning the money layer of a German
-  aviation SaaS. Available, 100% remote.
+  Senior Software Engineer specialized in payments & financial systems —
+  Stripe Connect, SEPA, DATEV, SAP-FI, XRechnung. 100% remote, open to roles.
 url: https://gabrielschutz.de
 lang: en
 markdown: kramdown
@@ -14,3 +13,4 @@ exclude:
   - README.md
   - cv-en.src.html
   - cv-de.src.html
+  - assets/og-image.svg

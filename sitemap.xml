@@ -3,12 +3,16 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://gabrielschutz.de/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
     <xhtml:link rel="alternate" hreflang="en" href="https://gabrielschutz.de/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://gabrielschutz.de/de/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gabrielschutz.de/"/>
   </url>
   <url>
     <loc>https://gabrielschutz.de/de/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
     <xhtml:link rel="alternate" hreflang="en" href="https://gabrielschutz.de/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://gabrielschutz.de/de/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gabrielschutz.de/"/>

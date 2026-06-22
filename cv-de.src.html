@@ -48,34 +48,34 @@
 <body>
   <img class="cv-photo" src="assets/portrait.jpg" alt="Gabriel Schütz de Souza">
   <h1 class="name">Gabriel Schütz de Souza</h1>
-  <p class="role">Payment Infrastructure &amp; Financial Systems Engineer</p>
-  <p class="contact">gbrl.schutz@gmail.com &middot; <a href="https://wa.me/5551994694448">+55 51 99469 4448</a> (WhatsApp) &middot; Remote — Brasilien (GMT-3, volle Überlappung mit deutschen Geschäftszeiten) &middot; <a href="https://gabrielschutz.de">gabrielschutz.de</a> &middot; <a href="https://www.linkedin.com/in/gabriel-schuetz">linkedin.com/in/gabriel-schuetz</a></p>
+  <p class="role">Senior Software Engineer — Payments &amp; Financial Systems</p>
+  <p class="contact">gbrl.schutz@gmail.com &middot; Remote — Brasilien (GMT-3, volle Überlappung mit deutschen Geschäftszeiten) &middot; <a href="https://gabrielschutz.de">gabrielschutz.de</a> &middot; <a href="https://www.linkedin.com/in/gabriel-schuetz">linkedin.com/in/gabriel-schuetz</a></p>
   <p class="langs-line">Deutsch (fließend, TestDaF 5/5/5/4) &middot; Englisch (fließend) &middot; Portugiesisch (Muttersprache) &middot; Französisch (B2)</p>
 
-  <p class="summary">Sechs Jahre Verantwortung für umsatzkritische Zahlungs- und Compliance-Systeme im produktiven Betrieb einer deutschen Aviation-SaaS: Stripe-Connect-Pipelines, SEPA, Mehrwährungs-Abstimmung, EU-E-Invoicing und deutsche Steuer-Integration — Bereiche, in denen Fehler unmittelbar rechtliche und finanzielle Folgen haben. KI-gestützte Arbeitsweise; einer von drei Kernentwicklern, die die gesamte Plattform am Laufen halten.</p>
+  <p class="summary">Sechs Jahre Verantwortung für umsatzkritische Zahlungs- und Compliance-Systeme im produktiven Betrieb einer deutschen Aviation-SaaS: Stripe-Connect-Pipelines, SEPA, Mehrwährungs-Abstimmung, EU-E-Invoicing und deutsche Steuer-Integration — Bereiche, in denen Fehler unmittelbar rechtliche und finanzielle Folgen haben. KI-gestützte Arbeitsweise; einer von drei Kernentwicklern, die die gesamte Plattform am Laufen hielten.</p>
 
   <hr>
 
   <h2>Kernkompetenzen</h2>
   <ul>
     <li><b>Zahlungsverkehr:</b> Stripe Connect (Destination Charges, automatische Partner-Payouts, Webhooks, 3-D-Secure), SEPA-Mandatslebenszyklus, Mehrwährung (EUR/CHF), Refund- &amp; Dispute-Handling, Idempotenz gegen Doppelabrechnung</li>
-    <li><b>Fakturierung &amp; Abstimmung:</b> Bankauszug-Import mit automatischem Rechnungsabgleich (Rechnungsnr. + Betrag + Kundennr.), MTOW-basierte Gebühren-Engine, Mahnwesen, periodische &amp; wiederkehrende Fakturierung, revisionssichere Rechnungsnummerierung</li>
+    <li><b>Fakturierung &amp; Abstimmung:</b> Kontoauszug-Import mit automatischem Rechnungsabgleich (Rechnungsnr. + Betrag + Kundennr.), MTOW-basierte Gebühren-Engine, Mahnwesen, periodische &amp; wiederkehrende Rechnungsstellung, revisionssichere Rechnungsnummerierung</li>
     <li><b>Regulatorische Compliance:</b> EU-E-Invoicing (XRechnung / EN 16931), deutsche Buchhaltungs-Integration (DATEV), SAP-FI-(RFBIBL)-Schnittstelle bis zu Kunden-Go-Lives in Produktion, BMD- (Österreich) / CEGID- (Frankreich) Exporte, USt &amp; Reverse-Charge</li>
-    <li><b>KI-gestützte Entwicklung:</b> agentisches PR-Review, Pre-Deploy-Impact-Analyse, KI-gebaute Tools, große Migrationen (Claude Code im täglichen produktiven Einsatz)</li>
+    <li><b>KI-gestützte Entwicklung:</b> <i>Conductor/Speccer</i> gebaut — ein Python-Multi-Agenten-Orchestrator, der Features autonom spezifiziert, baut und testet (DAG-Abhängigkeitsplanung, qualitätsgesicherte Phasen); KI-gestützte Playwright-E2E-Generierung; agentisches PR-Review und Pre-Deploy-Impact-Analyse (Claude Code im täglichen produktiven Einsatz)</li>
   </ul>
 
   <h2>Berufserfahrung</h2>
   <h3>Senior Software Engineer — Payments &amp; Financial Systems</h3>
   <p class="job-meta"><b>aerops GmbH</b> (deutsche Aviation-SaaS, 350+ Flugplätze) &middot; Jul 2020 – 2026 &middot; Remote, freiberuflich (über eigene Beratungsfirma)</p>
-  <p class="job-intro">Principal Owner der Zahlungs-, Fakturierungs- und Compliance-Schicht der Plattform — alleiniger Entwickler der Accounting-Export-Suite (DATEV, SAP, BMD, CEGID), des E-Invoicing, des Mahnwesens und des Dokumentenversands; einer von drei Kernentwicklern.</p>
+  <p class="job-intro">Hauptverantwortlicher für die Zahlungs-, Fakturierungs- und Compliance-Schicht der Plattform — alleiniger Entwickler der Accounting-Export-Suite (DATEV, SAP, BMD, CEGID), des E-Invoicing, des Mahnwesens und des Dokumentenversands; einer von drei Kernentwicklern.</p>
   <ul>
-    <li>Das <b>Gebührenabrechnungssystem</b> für den DFS-Aviation-Services-(DAS)-Vertrag gebaut und betrieben — MTOW-basierte Gebührenberechnung, Kundenzuordnung, Rechnungserzeugung, Shop-Integration —, über das <b>€62,9 Mio. an Flughafengebühren fakturiert und eingezogen</b> wurden (all-time; überwiegend per Bank/SEPA beglichen). Solo in Node.js bootstrapped und mit einem von mir geholten und geführten Entwickler skaliert.</li>
-    <li>Die deutsche/EU-<b>Compliance-Export-Suite</b> End-to-End verantwortet: <b>DATEV</b>-Buchhaltungs-Integration, <b>XRechnung</b>-E-Invoicing (EN 16931, mit Validator) und eine <b>SAP-FI-(RFBIBL/FAGU)-Schnittstelle, solo zu zwei Kunden-Go-Lives in Produktion gebracht</b> (mit formellen schriftlichen Kunden-Freigaben), plus <b>BMD</b>- (Österreich) und <b>CEGID</b>- (Frankreich) Exporte.</li>
-    <li>Principal Owner der <b>Stripe-Zahlungsinfrastruktur</b> — Connect Destination Charges mit automatischen Partner-Payouts, SEPA-Mandate, 3-D-Secure, EUR/CHF, Refunds &amp; Disputes, Idempotenz gegen Doppelabrechnung — über die Plattform <b>€8,47 Mio.</b> Bruttovolumen abgewickelt.</li>
-    <li>Den in-house <b>Mahnwesen</b>-Microservice und das <b>Bankauszug-Import- + Payment-Matching</b>-System gebaut (camt.052 / MT940 / CSV; automatischer Abgleich über Rechnungsnr. + Betrag + Kundennr.), plus periodische &amp; wiederkehrende Fakturierung.</li>
+    <li>Das <b>Gebührenabrechnungssystem</b> für einen nationalen Flugsicherungsdienstleister gebaut und betrieben — MTOW-basierte Gebührenberechnung, Kundenzuordnung, Rechnungserzeugung, Shop-Integration —, über das <b>€62,9 Mio. an Flughafengebühren fakturiert und eingezogen</b> wurden (all-time; überwiegend per Bank/SEPA beglichen). Solo in Node.js bootstrapped und mit einem von mir geholten und geführten Entwickler skaliert.</li>
+    <li>Die deutsche/EU-<b>Compliance-Export-Suite</b> End-to-End verantwortet: <b>DATEV</b>-Buchhaltungs-Integration, <b>XRechnung</b>-E-Invoicing (EN 16931, mit Validator) und eine <b>SAP-FI-(RFBIBL)-Schnittstelle, solo zu zwei Kunden-Go-Lives in Produktion gebracht</b> (mit formellen schriftlichen Kunden-Freigaben), plus <b>BMD</b>- (Österreich) und <b>CEGID</b>- (Frankreich) Exporte.</li>
+    <li>Kernentwickler und Mit-Eigentümer der <b>Stripe-Zahlungsinfrastruktur</b> — Connect Destination Charges mit automatischen Partner-Payouts, SEPA-Mandate, 3-D-Secure, EUR/CHF, Refunds &amp; Disputes, Idempotenz gegen Doppelabrechnung — auf einer Plattform, die <b>€8,47 Mio.</b> Stripe-Bruttovolumen verarbeitet hat.</li>
+    <li>Den in-house <b>Mahnwesen</b>-Microservice und das <b>Kontoauszug-Import- + Payment-Matching</b>-System gebaut (camt.052 / MT940 / CSV; automatischer Abgleich über Rechnungsnr. + Betrag + Kundennr.), plus periodische &amp; wiederkehrende Fakturierung.</li>
     <li>Eine neue per-Flughafen-<b>Document-Dispatch-Plattform</b> gebaut (SMTP / Gmail-OAuth / Outlook-OAuth-Mailer mit mehrstufigem Fallback, Template-Editor, DeepL-Mehrsprachigkeit) als Ablösung des Legacy-Mailers; die Shopware → Backend-Migration der Abrechnungsdomäne vorangetrieben.</li>
-    <li>504-Timeouts bei sehr großen Bestellungen (2.000+ Positionen) über eine gebatchte Article-Append-API + asynchrone Fakturierung behoben; den Laravel-Framework-Upgrade mitgeführt; <b>eine versehentlich gelöschte Produktionstabelle aus den rohen Datenbankdateien wiederhergestellt</b>.</li>
-    <li>Einen <b>KI-gestützten Workflow im produktiven Einsatz</b> betrieben — Claude-basiertes PR-Review, Pre-Deploy-Impact-Analyse, KI-gebaute Tools — schnelle Lieferung bei voller architektonischer Verantwortung.</li>
+    <li>504-Timeouts bei sehr großen Bestellungen (2.000+ Positionen) über eine Batch-API zum Anhängen von Positionen + asynchrone Fakturierung behoben; den Laravel-Framework-Upgrade mitgeführt.</li>
+    <li>Einen <b>KI-gestützten Workflow im produktiven Einsatz</b> auf einer Payments-/Compliance-Codebasis betrieben — und die Tools dahinter selbst gebaut: <i>Conductor/Speccer</i>, ein Python-Multi-Agenten-Orchestrator, der Features autonom spezifiziert, baut und testet, plus eine KI-Playwright-Pipeline, die die App wie ein echter Nutzer erkundet und daraus E2E-Testsuiten ableitet — wo ein Fehler rechtliche und finanzielle Folgen hat; schnelle Lieferung bei voller architektonischer Verantwortung.</li>
   </ul>
 
   <h2>Tech-Stack</h2>

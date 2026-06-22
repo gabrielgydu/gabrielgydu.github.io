@@ -46,20 +46,20 @@
 </head>
 <body>
   <h1 class="name">Gabriel Schütz de Souza</h1>
-  <p class="role">Payment Infrastructure &amp; Financial Systems Engineer</p>
-  <p class="contact">gbrl.schutz@gmail.com &middot; <a href="https://wa.me/5551994694448">+55 51 99469 4448</a> (WhatsApp) &middot; Remote — Brazil (GMT-3, 1–2h ahead of US Eastern; full US-hours overlap) &middot; <a href="https://gabrielschutz.de">gabrielschutz.de</a> &middot; <a href="https://www.linkedin.com/in/gabriel-schuetz">linkedin.com/in/gabriel-schuetz</a></p>
+  <p class="role">Senior Software Engineer — Payments &amp; Financial Systems</p>
+  <p class="contact">gbrl.schutz@gmail.com &middot; Remote — Brazil (GMT-3, 1–2h ahead of US Eastern; full US-hours overlap) &middot; <a href="https://gabrielschutz.de">gabrielschutz.de</a> &middot; <a href="https://www.linkedin.com/in/gabriel-schuetz">linkedin.com/in/gabriel-schuetz</a></p>
   <p class="langs-line">English &middot; German (fluent, TestDaF 5/5/5/4) &middot; Portuguese (native) &middot; French (B2)</p>
 
-  <p class="summary">Six years owning revenue-critical payment and compliance systems in production for a German aviation SaaS: Stripe Connect pipelines, SEPA, multi-currency reconciliation, EU e-invoicing, and German tax integration — domains where errors have legal and financial consequences. AI-augmented workflow; one of three core developers who keep the entire platform running.</p>
+  <p class="summary">Six years owning revenue-critical payment and compliance systems in production for a German aviation SaaS: Stripe Connect pipelines, SEPA, multi-currency reconciliation, EU e-invoicing, and German tax integration — domains where errors have legal and financial consequences. AI-augmented workflow; one of three core developers who kept the entire platform running.</p>
 
   <hr>
 
   <h2>Core Expertise</h2>
   <ul>
     <li><b>Payments:</b> Stripe Connect (destination charges, automated partner payouts, webhooks, 3D Secure), SEPA mandate lifecycle, multi-currency (EUR/CHF), refund &amp; dispute handling, idempotent double-charge prevention</li>
-    <li><b>Billing &amp; reconciliation:</b> bank-statement import with automated invoice matching (invoice number + amount + customer number), MTOW-based airport-fee engine, dunning (Mahnwesen), periodical &amp; recurring invoicing, audit-ready invoice sequencing</li>
+    <li><b>Billing &amp; reconciliation:</b> bank-statement import with automated invoice matching (invoice number + amount + customer number), aircraft-weight-based (MTOW) airport-fee engine, dunning (Mahnwesen), periodical &amp; recurring invoicing, audit-ready invoice sequencing</li>
     <li><b>Regulatory compliance:</b> EU e-invoicing (XRechnung / EN 16931), German accounting integration (DATEV), SAP FI (RFBIBL) interface to customer production go-lives, BMD (Austria) / CEGID (France) exports, VAT &amp; reverse-charge handling</li>
-    <li><b>AI-augmented engineering:</b> agentic PR review, pre-deploy impact analysis, AI-built tooling, large-scale migrations (Claude Code in daily production use)</li>
+    <li><b>AI-augmented engineering:</b> built <i>Conductor/Speccer</i>, a Python multi-agent orchestrator that specs, builds, and tests features autonomously (dependency-DAG scheduling, quality-gated phases); AI-driven Playwright E2E generation; agentic PR review and pre-deploy impact analysis (Claude Code in daily production use)</li>
   </ul>
 
   <h2>Experience</h2>
@@ -67,13 +67,13 @@
   <p class="job-meta"><b>aerops GmbH</b> (German aviation SaaS, 350+ airfields) &middot; Jul 2020 – 2026 &middot; Remote contract (via own consultancy)</p>
   <p class="job-intro">Principal owner of the platform's payments, billing, and financial-compliance layer — sole developer of its accounting-export suite (DATEV, SAP, BMD, CEGID), e-invoicing, dunning, and document dispatch; one of three core developers.</p>
   <ul>
-    <li>Built and operated the <b>airport-fee billing system</b> for the DFS Aviation Services (DAS) contract — MTOW-based fee calculation, customer matching, invoice generation, shop integration — which has <b>invoiced and collected €62.9M in airport fees</b> (all-time; mostly bank/SEPA-settled). Bootstrapped it solo in Node.js and scaled it with a developer I brought in and managed.</li>
-    <li>Own the German/EU <b>financial-compliance export suite</b> end-to-end: <b>DATEV</b> accounting integration, <b>XRechnung</b> e-invoicing (EN 16931, with validator), and a <b>SAP FI (RFBIBL/FAGU) interface taken solo to two customer production go-lives</b> (with formal written customer sign-offs), plus <b>BMD</b> (Austria) and <b>CEGID</b> (France) exports.</li>
-    <li>Principal owner of the <b>Stripe payment infrastructure</b> — Connect destination charges with automated partner payouts, SEPA mandates, 3D Secure, EUR/CHF, refunds &amp; disputes, idempotent double-charge prevention — handling <b>€8.47M</b> in gross volume across the platform.</li>
+    <li>Built and operated the <b>airport-fee billing system</b> for a national air-navigation services provider — aircraft-weight-based (MTOW) fee calculation, customer matching, invoice generation, shop integration — which has <b>invoiced and collected €62.9M in airport fees</b> (all-time; mostly bank/SEPA-settled). Bootstrapped it solo in Node.js and scaled it with a developer I brought in and managed.</li>
+    <li>Owned the German/EU <b>financial-compliance export suite</b> end-to-end: <b>DATEV</b> accounting integration, <b>XRechnung</b> e-invoicing (EN 16931, with validator), and a <b>SAP FI (RFBIBL) interface taken solo to two customer production go-lives</b> (with formal written customer sign-offs), plus <b>BMD</b> (Austria) and <b>CEGID</b> (France) exports.</li>
+    <li>Core developer and co-owner of the <b>Stripe payment infrastructure</b> — Connect destination charges with automated partner payouts, SEPA mandates, 3D Secure, EUR/CHF, refunds &amp; disputes, idempotent double-charge prevention — on a platform that has processed <b>€8.47M</b> in Stripe gross volume.</li>
     <li>Built the in-house <b>dunning (Mahnwesen)</b> microservice and the <b>bank-statement import + payment-matching</b> system (camt.052 / MT940 / CSV; auto-reconciles by invoice number + amount + customer number), plus periodical &amp; recurring invoicing.</li>
     <li>Built a new per-airport <b>document-dispatch platform</b> (SMTP / Gmail-OAuth / Outlook-OAuth mailers with multi-tier fallback, template editor, DeepL multi-locale) replacing the legacy mailer; drove the Shopware → backend migration of the billing domain.</li>
-    <li>Fixed 504 timeouts on very large orders (2,000+ line items) via a batched article-append API + async invoicing; co-led the Laravel framework upgrade; <b>recovered a deleted production table from the raw database files</b> after an accidental deletion.</li>
-    <li>Run an <b>AI-augmented workflow in production</b> — Claude-based PR review, pre-deploy impact analysis, AI-built tooling — shipping fast while keeping full architectural ownership.</li>
+    <li>Fixed 504 timeouts on very large orders (2,000+ line items) via a batched article-append API + async invoicing; co-led the Laravel framework upgrade.</li>
+    <li>Ran an <b>AI-augmented workflow in production</b> on a payments/compliance codebase — and built the tooling behind it: <i>Conductor/Speccer</i>, a Python multi-agent orchestrator that specs, builds, and tests features autonomously, plus an AI Playwright pipeline that explores the app as a real user to derive and emit E2E test suites — where a regression carries legal and financial cost; shipping fast while keeping full architectural ownership.</li>
   </ul>
 
   <h2>Technical Stack</h2>
