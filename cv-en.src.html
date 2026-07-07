@@ -58,7 +58,7 @@
   <h2>Core Expertise</h2>
   <ul>
     <li><b>Payments:</b> Stripe Connect (destination charges, automated partner payouts, webhooks, 3D Secure), SEPA mandate lifecycle, multi-currency (EUR/CHF), refund &amp; dispute handling, idempotent double-charge prevention</li>
-    <li><b>Billing &amp; reconciliation:</b> bank-statement import with automated invoice matching (invoice number + amount + customer number), aircraft-weight-based (MTOW) airport-fee engine, dunning (Mahnwesen), periodical &amp; recurring invoicing, audit-ready invoice sequencing</li>
+    <li><b>Billing &amp; reconciliation:</b> bank-statement import with automated invoice matching (invoice number + amount + customer number), aircraft-weight-based (MTOW) approach-fee engine, dunning (Mahnwesen), periodical &amp; recurring invoicing, audit-ready invoice sequencing</li>
     <li><b>Regulatory compliance:</b> EU e-invoicing (XRechnung / EN 16931), German accounting integration (DATEV), SAP FI (RFBIBL) interface to customer production go-lives, BMD (Austria) / CEGID (France) exports, VAT &amp; reverse-charge handling</li>
     <li><b>AI-augmented engineering:</b> built <i>Conductor/Speccer</i>, a Python multi-agent orchestrator that specs, builds, and tests features autonomously (dependency-DAG scheduling, quality-gated phases); AI-driven Playwright E2E generation; agentic PR review and pre-deploy impact analysis (Claude Code in daily production use)</li>
   </ul>
@@ -68,9 +68,9 @@
   <p class="job-meta"><b>aerops GmbH</b> (German aviation SaaS, 350+ airfields) &middot; Jul 2020 – 2026 &middot; Remote contract (via own consultancy)</p>
   <p class="job-intro">Principal owner of the platform's payments, billing, and financial-compliance layer — sole developer of its accounting-export suite (DATEV, SAP, BMD, CEGID), e-invoicing, dunning, and document dispatch; one of three core developers.</p>
   <ul>
-    <li>Built and operated the <b>airport-fee billing system</b> for a national air-navigation services provider — aircraft-weight-based (MTOW) fee calculation, customer matching, invoice generation, shop integration — which has <b>invoiced and collected €62.9M in airport fees</b> (all-time; mostly bank/SEPA-settled). Bootstrapped it solo in Node.js and scaled it with a developer I brought in and managed.</li>
+    <li>Built and operated the <b>approach-fee billing system</b> for a national air-navigation services provider — aircraft-weight-based (MTOW) fee calculation, customer matching, invoice generation, shop integration — which has <b>invoiced and collected €62.9M in approach fees</b> (all-time; mostly bank/SEPA-settled). Bootstrapped it solo in Node.js and scaled it with a developer I brought in and managed.</li>
     <li>Owned the German/EU <b>financial-compliance export suite</b> end-to-end: <b>DATEV</b> accounting integration, <b>XRechnung</b> e-invoicing (EN 16931, with validator), and a <b>SAP FI (RFBIBL) interface taken solo to two customer production go-lives</b> (with formal written customer sign-offs), plus <b>BMD</b> (Austria) and <b>CEGID</b> (France) exports.</li>
-    <li>Core developer and co-owner of the <b>Stripe payment infrastructure</b> — Connect destination charges with automated partner payouts, SEPA mandates, 3D Secure, EUR/CHF, refunds &amp; disputes, idempotent double-charge prevention — on a platform that has processed <b>€8.47M</b> in Stripe gross volume.</li>
+    <li>Principal owner of the <b>Stripe payment infrastructure</b> — Connect destination charges with automated partner payouts, SEPA mandates, 3D Secure, EUR/CHF, refunds &amp; disputes, idempotent double-charge prevention — handling <b>€8.47M</b> in gross volume across the platform; event-driven processing (PaymentEvent queue + async jobs over RabbitMQ).</li>
     <li>Built the in-house <b>dunning (Mahnwesen)</b> microservice and the <b>bank-statement import + payment-matching</b> system (camt.052 / MT940 / CSV; auto-reconciles by invoice number + amount + customer number), plus periodical &amp; recurring invoicing.</li>
     <li>Built a new per-airport <b>document-dispatch platform</b> (SMTP / Gmail-OAuth / Outlook-OAuth mailers with multi-tier fallback, template editor, DeepL multi-locale) replacing the legacy mailer; drove the Shopware → backend migration of the billing domain.</li>
     <li>Fixed 504 timeouts on very large orders (2,000+ line items) via a batched article-append API + async invoicing; co-led the Laravel framework upgrade.</li>
@@ -85,7 +85,7 @@
   </ul>
 
   <h2>Technical Stack</h2>
-  <p class="stack-line"><b>Backend:</b> PHP/Laravel (primary), Node.js/Express &middot; <b>Frontend:</b> HTML, CSS, JavaScript, Blade/server-side templates (earlier projects: Vue.js, AngularJS) &middot; <b>Data:</b> MySQL/MariaDB, MongoDB &middot; <b>Payments:</b> Stripe (Connect, Terminal, webhooks), SEPA &middot; <b>Compliance:</b> DATEV Connect, XRechnung &middot; <b>Infra:</b> Docker, GitHub Actions CI/CD &middot; <b>Testing:</b> PHPUnit, Codeception, Jest, PHPStan</p>
+  <p class="stack-line"><b>Backend:</b> PHP/Laravel (primary), Node.js/Express &middot; <b>Frontend:</b> HTML, CSS, JavaScript, Blade/server-side templates (earlier projects: Vue.js, AngularJS) &middot; <b>Data:</b> MySQL/MariaDB, MongoDB &middot; <b>Payments:</b> Stripe (Connect, Terminal, webhooks), SEPA &middot; <b>Compliance:</b> DATEV Connect, XRechnung &middot; <b>Infra:</b> Docker, RabbitMQ, GitHub Actions CI/CD &middot; <b>Testing:</b> PHPUnit, Codeception, Jest, PHPStan</p>
 
   <h2>Education</h2>
   <ul class="edu-list">
