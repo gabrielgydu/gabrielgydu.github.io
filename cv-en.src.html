@@ -68,10 +68,10 @@
   <p class="job-meta"><b>aerops GmbH</b> (German aviation SaaS, 350+ airfields) &middot; Jul 2020 – 2026 &middot; Remote contract (via own consultancy)</p>
   <p class="job-intro">Principal owner of the platform's payments, billing, and financial-compliance layer — sole developer of its accounting-export suite (DATEV, SAP, BMD, CEGID), e-invoicing, dunning, and document dispatch; one of three core developers.</p>
   <ul>
-    <li>Built and operated the <b>approach-fee billing system</b> for a national air-navigation services provider — aircraft-weight-based (MTOW) fee calculation, customer matching, invoice generation, shop integration — which has <b>invoiced and collected €62.9M in approach fees</b> (all-time; mostly bank/SEPA-settled). Bootstrapped it solo in Node.js and scaled it with a developer I brought in and managed.</li>
+    <li>Built and operated the <b>approach-fee billing system</b> for a national air-navigation services provider — aircraft-weight-based (MTOW) fee calculation, customer matching, invoice generation, shop integration — which has <b>invoiced and collected €62.9M in approach fees</b> (all-time; mostly bank/SEPA-settled). Bootstrapped it solo in Node.js.</li>
     <li>Owned the German/EU <b>financial-compliance export suite</b> end-to-end: <b>DATEV</b> accounting integration, <b>XRechnung</b> e-invoicing (EN 16931, with validator), and a <b>SAP FI (RFBIBL) interface taken solo to two customer production go-lives</b> (with formal written customer sign-offs), plus <b>BMD</b> (Austria) and <b>CEGID</b> (France) exports.</li>
     <li>Principal owner of the <b>Stripe payment infrastructure</b> — Connect destination charges with automated partner payouts, SEPA mandates, 3D Secure, EUR/CHF, refunds &amp; disputes, idempotent double-charge prevention — handling <b>€8.47M</b> in gross volume across the platform; event-driven processing (PaymentEvent queue + async jobs over RabbitMQ).</li>
-    <li>Built the in-house <b>dunning (Mahnwesen)</b> microservice and the <b>bank-statement import + payment-matching</b> system (camt.052 / MT940 / CSV; auto-reconciles by invoice number + amount + customer number), plus periodical &amp; recurring invoicing.</li>
+    <li>Built the in-house <b>dunning (Mahnwesen)</b> microservice and the <b>bank-statement import + payment-matching</b> system (camt.052 / CSV; auto-reconciles by invoice number + amount + customer number), plus periodical &amp; recurring invoicing.</li>
     <li>Built a new per-airport <b>document-dispatch platform</b> (SMTP / Gmail-OAuth / Outlook-OAuth mailers with multi-tier fallback, template editor, DeepL multi-locale) replacing the legacy mailer; drove the Shopware → backend migration of the billing domain.</li>
     <li>Fixed 504 timeouts on very large orders (2,000+ line items) via a batched article-append API + async invoicing; co-led the Laravel framework upgrade.</li>
     <li>Ran an <b>AI-augmented workflow in production</b> on a payments/compliance codebase — and built the tooling behind it: <i>Conductor/Speccer</i>, a Python multi-agent orchestrator that specs, builds, and tests features autonomously, plus an AI Playwright pipeline that explores the app as a real user to derive and emit E2E test suites — where a regression carries legal and financial cost; shipping fast while keeping full architectural ownership.</li>
@@ -90,7 +90,7 @@
   <h2>Education</h2>
   <ul class="edu-list">
     <li><b>B.Sc. Computer Science — Uniritter (Brazil)</b>, in progress, expected 2028</li>
-    <li>Prior CS coursework: <b>TU Dresden</b> (2019–2021, GPA 1.3 on the German scale — top marks); <b>UNISINOS</b> Computer Engineering (2017–2019)</li>
+    <li>Prior CS coursework: <b>TU Dresden</b> (2019–2021); <b>UNISINOS</b> Computer Engineering (2017–2019)</li>
     <li><b>Electronics technician</b> — Fundação Liberato technical school (Novo Hamburgo, Brazil), 2012–2017: Assembly, C, microcontrollers</li>
   </ul>
 
