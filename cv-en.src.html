@@ -51,7 +51,7 @@
   <p class="contact">contact@gabrielschutz.de &middot; Remote — Brazil (GMT-3, 1–2h ahead of US Eastern; full US-hours overlap) &middot; <a href="https://gabrielschutz.de">gabrielschutz.de</a> &middot; <a href="https://www.linkedin.com/in/gabriel-schuetz">linkedin.com/in/gabriel-schuetz</a></p>
   <p class="langs-line">English &middot; German (fluent, TestDaF 5/5/5/4) &middot; Portuguese (native) &middot; French (B2)</p>
 
-  <p class="summary">Six years owning revenue-critical payment and compliance systems in production for a German aviation SaaS: Stripe Connect pipelines, SEPA, multi-currency reconciliation, EU e-invoicing, and German tax integration — domains where errors have legal and financial consequences. AI-augmented workflow; one of three core developers who kept the entire platform running. An engineer before a web developer: programming since 2014 — Assembly/C and embedded electronics first — with an internationally awarded ML + hardware assistive device built at 18.</p>
+  <p class="summary">Six years building and running revenue-critical payment and compliance systems in production for a German aviation SaaS: Stripe Connect pipelines, SEPA, multi-currency reconciliation, EU e-invoicing, and German tax integration — domains where errors have legal and financial consequences. Built and operated the approach-fee billing system that has invoiced and collected €62.9M, bootstrapped solo in Node.js. AI-augmented workflow; one of three core developers who kept the entire platform running. An engineer before a web developer: programming since 2014 — Assembly/C and embedded electronics first — with an internationally awarded ML + hardware assistive device built at 18.</p>
 
   <hr>
 
@@ -66,15 +66,15 @@
   <h2>Experience</h2>
   <h3>Senior Software Engineer — Payments &amp; Financial Systems</h3>
   <p class="job-meta"><b>aerops GmbH</b> (German aviation SaaS, 350+ airfields) &middot; Jul 2020 – 2026 &middot; Remote contract (via own consultancy)</p>
-  <p class="job-intro">Principal owner of the platform's payments, billing, and financial-compliance layer — sole developer of its accounting-export suite (DATEV, SAP, BMD, CEGID), e-invoicing, dunning, and document dispatch; one of three core developers.</p>
+  <p class="job-intro">Built and ran the platform's payments, billing, and financial-compliance layer — sole developer of its accounting-export suite (DATEV, SAP, BMD, CEGID), e-invoicing, dunning, and document dispatch; one of three core developers.</p>
   <ul>
     <li>Built and operated the <b>approach-fee billing system</b> for a national air-navigation services provider — aircraft-weight-based (MTOW) fee calculation, customer matching, invoice generation, shop integration — which has <b>invoiced and collected €62.9M in approach fees</b> (all-time; mostly bank/SEPA-settled). Bootstrapped it solo in Node.js.</li>
-    <li>Owned the German/EU <b>financial-compliance export suite</b> end-to-end: <b>DATEV</b> accounting integration, <b>XRechnung</b> e-invoicing (EN 16931, with validator), and a <b>SAP FI (RFBIBL) interface taken solo to two customer production go-lives</b> (with formal written customer sign-offs), plus <b>BMD</b> (Austria) and <b>CEGID</b> (France) exports.</li>
-    <li>Principal owner of the <b>Stripe payment infrastructure</b> — Connect destination charges with automated partner payouts, SEPA mandates, 3D Secure, EUR/CHF, refunds &amp; disputes, idempotent double-charge prevention — handling <b>€8.47M</b> in gross volume across the platform; event-driven processing (PaymentEvent queue + async jobs over RabbitMQ).</li>
+    <li>Built the German/EU <b>financial-compliance export suite</b> end-to-end: <b>DATEV</b> accounting integration, <b>XRechnung</b> e-invoicing (EN 16931, with validator), and a <b>SAP FI (RFBIBL) interface taken solo to two customer production go-lives</b> (with formal written customer sign-offs), plus <b>BMD</b> (Austria) and <b>CEGID</b> (France) exports.</li>
+    <li>Architected and built the core of the <b>Stripe payment infrastructure</b> — Connect destination charges with automated partner payouts, SEPA mandates, 3D Secure, EUR/CHF, refunds &amp; disputes, idempotent double-charge prevention — handling <b>€8.47M</b> in gross volume across the platform; event-driven processing (PaymentEvent queue + async jobs over RabbitMQ).</li>
     <li>Built the in-house <b>dunning (Mahnwesen)</b> microservice and the <b>bank-statement import + payment-matching</b> system (camt.052 / CSV; auto-reconciles by invoice number + amount + customer number), plus periodical &amp; recurring invoicing.</li>
     <li>Built a new per-airport <b>document-dispatch platform</b> (SMTP / Gmail-OAuth / Outlook-OAuth mailers with multi-tier fallback, template editor, DeepL multi-locale) replacing the legacy mailer; drove the Shopware → backend migration of the billing domain.</li>
-    <li>Fixed 504 timeouts on very large orders (2,000+ line items) via a batched article-append API + async invoicing.</li>
-    <li>Ran an <b>AI-augmented workflow in production</b> on a payments/compliance codebase — and built the tooling behind it: <i>Conductor/Speccer</i>, a Python multi-agent orchestrator that specs, builds, and tests features autonomously, plus an AI Playwright pipeline that explores the app as a real user to derive and emit E2E test suites — where a regression carries legal and financial cost; shipping fast while keeping full architectural ownership.</li>
+    <li>Fixed request timeouts on very large orders (2,000+ line items) via a batched article-append API + async invoicing.</li>
+    <li>Built the AI tooling behind an <b>AI-augmented workflow in production</b> on a payments/compliance codebase: <i>Conductor/Speccer</i>, a Python multi-agent orchestrator that specs, builds, and tests features autonomously, plus an AI Playwright pipeline that explores the app as a real user to derive and emit E2E test suites — and ran it where a regression carries legal and financial cost, shipping fast while keeping full architectural control.</li>
   </ul>
 
   <h3 class="earlier">Earlier</h3>
@@ -85,7 +85,7 @@
   </ul>
 
   <h2>Technical Stack</h2>
-  <p class="stack-line"><b>Backend:</b> PHP/Laravel (primary), Node.js/Express &middot; <b>Frontend:</b> HTML, CSS, JavaScript, Blade/server-side templates (earlier projects: Vue.js, AngularJS) &middot; <b>Data:</b> MySQL/MariaDB, MongoDB &middot; <b>Payments:</b> Stripe (Connect, Terminal, webhooks), SEPA &middot; <b>Compliance:</b> DATEV Connect, XRechnung &middot; <b>Infra:</b> Docker, RabbitMQ, GitHub Actions CI/CD &middot; <b>Testing:</b> PHPUnit, Codeception, Jest, PHPStan</p>
+  <p class="stack-line"><b>Backend:</b> Node.js/Express (in production since 2021), PHP/Laravel (platform core) &middot; <b>Frontend:</b> HTML, CSS, JavaScript, Blade/server-side templates (earlier projects: Vue.js, AngularJS) &middot; <b>Data:</b> MySQL/MariaDB, MongoDB &middot; <b>Payments:</b> Stripe (Connect, Terminal, webhooks), SEPA &middot; <b>Compliance:</b> DATEV Connect, XRechnung &middot; <b>Infra:</b> Docker, RabbitMQ, GitHub Actions CI/CD &middot; <b>Testing:</b> PHPUnit, Codeception, Jest, PHPStan</p>
 
   <h2>Education</h2>
   <ul class="edu-list">
