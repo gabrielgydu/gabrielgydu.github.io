@@ -70,7 +70,7 @@
   <ul>
     <li>Built and operated the <b>approach-fee billing system</b> for a national air-navigation services provider — aircraft-weight-based (MTOW) fee calculation, customer matching, invoice generation, shop integration — which has <b>invoiced and collected €62.9M in approach fees</b> (all-time; mostly bank/SEPA-settled). Bootstrapped it solo in Node.js.</li>
     <li>Built the German/EU <b>financial-compliance export suite</b> end-to-end: <b>DATEV</b> accounting integration, <b>XRechnung</b> e-invoicing (EN 16931, with validator), and a <b>SAP FI (RFBIBL) interface taken solo to two customer production go-lives</b> (with formal written customer sign-offs), plus <b>BMD</b> (Austria) and <b>CEGID</b> (France) exports.</li>
-    <li>Architected and built the core of the <b>Stripe payment infrastructure</b> — Connect destination charges with automated partner payouts, SEPA mandates, 3D Secure, EUR/CHF, refunds &amp; disputes, idempotent double-charge prevention — handling <b>€8.47M</b> in gross volume across the platform; event-driven processing (PaymentEvent queue + async jobs over RabbitMQ).</li>
+    <li>Re-architected the platform's <b>Stripe payment infrastructure</b> — inherited as a Shopware plugin — into a central payment service in the core backend: designed its event-driven spine (PaymentEvent queue + async jobs over RabbitMQ) and built Connect destination charges with automated partner payouts, SEPA mandates, 3D Secure, EUR/CHF, refund &amp; dispute handling, and idempotent double-charge prevention — handling <b>€8.47M</b> in gross volume across the platform.</li>
     <li>Built the in-house <b>dunning (Mahnwesen)</b> microservice and the <b>bank-statement import + payment-matching</b> system (camt.052 / CSV; auto-reconciles by invoice number + amount + customer number), plus periodical &amp; recurring invoicing.</li>
     <li>Built a new per-airport <b>document-dispatch platform</b> (SMTP / Gmail-OAuth / Outlook-OAuth mailers with multi-tier fallback, template editor, DeepL multi-locale) replacing the legacy mailer; drove the Shopware → backend migration of the billing domain.</li>
     <li>Fixed request timeouts on very large orders (2,000+ line items) via a batched article-append API + async invoicing.</li>
@@ -85,7 +85,7 @@
   </ul>
 
   <h2>Technical Stack</h2>
-  <p class="stack-line"><b>Backend:</b> Node.js/Express (in production since 2021), PHP/Laravel (platform core) &middot; <b>Frontend:</b> HTML, CSS, JavaScript, Blade/server-side templates (earlier projects: Vue.js, AngularJS) &middot; <b>Data:</b> MySQL/MariaDB, MongoDB &middot; <b>Payments:</b> Stripe (Connect, Terminal, webhooks), SEPA &middot; <b>Compliance:</b> DATEV Connect, XRechnung &middot; <b>Infra:</b> Docker, RabbitMQ, GitHub Actions CI/CD &middot; <b>Testing:</b> PHPUnit, Codeception, Jest, PHPStan</p>
+  <p class="stack-line"><b>Backend:</b> Node.js/Express, PHP/Laravel &middot; <b>Frontend:</b> HTML, CSS, JavaScript, Blade/server-side templates (earlier projects: Vue.js, AngularJS) &middot; <b>Data:</b> MySQL/MariaDB, MongoDB &middot; <b>Payments:</b> Stripe (Connect, Terminal, webhooks), SEPA &middot; <b>Compliance:</b> DATEV Connect, XRechnung &middot; <b>Infra:</b> Docker, RabbitMQ, GitHub Actions CI/CD &middot; <b>Testing:</b> PHPUnit, Codeception, Jest, PHPStan</p>
 
   <h2>Education</h2>
   <ul class="edu-list">
