@@ -13,4 +13,6 @@ exclude:
   - README.md
   - cv-en.src.html
   - cv-de.src.html
+  - cv-en-aviation.src.html
   - assets/og-image.svg
+  - variants
