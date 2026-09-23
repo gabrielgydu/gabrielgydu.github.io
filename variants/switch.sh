@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Switch the live English home page between content variants.
 #
-#   variants/switch.sh vector    # the Vector-focused page (while that thread is live)
+#   variants/switch.sh aviation  # the aviation-sector page (while the aviation threads are live)
 #   variants/switch.sh default   # the broad payments page (back to the general search)
 #   variants/switch.sh --status  # which variant index.html currently matches
 #
