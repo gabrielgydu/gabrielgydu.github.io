@@ -1,0 +1,115 @@
+---
+layout: default
+lang: en
+alt_url: /de/
+canonical: https://gabrielschutz.de/
+og_locale: en_US
+job_title: "Senior Software Engineer — Airport Revenue & Payment Systems"
+meta_title: "Gabriel Schütz — Senior Software Engineer, Airport Revenue & Payment Systems"
+description: "Six years building and running approach-fee billing, collection and payment infrastructure for a German aviation SaaS. One of three core developers. Available now, remote from Brazil on US Eastern hours."
+---
+
+<section class="hero reveal">
+  <div class="hero-text">
+    <h1 class="name">Gabriel Schütz</h1>
+    <p class="role">Senior Software Engineer — Airport Revenue &amp; Payment Systems</p>
+    <p class="lede">Six years building and running the software that turns an <strong>aircraft movement into money in the bank</strong>: fee calculation, matching, invoicing, collection, reconciliation and the accounting exports. One of three core developers of a German aviation SaaS used by 350+ airfields.</p>
+    <p class="avail"><span class="dot" aria-hidden="true"></span><b>Available now</b>Contracting company-to-company since 2021 · Brazil, GMT-3, 1–2h ahead of US&nbsp;Eastern: your whole business day is inside my working day.</p>
+    <div class="cta-row hero-cta">
+      <a class="btn btn-primary" href="/assets/Gabriel-Schutz-CV-EN-full.pdf" download="Gabriel-Schutz-CV-EN.pdf">Download CV <span class="pdf">EN · PDF</span></a>
+      <a class="btn btn-ghost" href="mailto:contact@gabrielschutz.de">Email me</a>
+    </div>
+  </div>
+  <img class="portrait" src="/assets/portrait.jpg" width="215" height="266" alt="Gabriel Schütz" loading="eager">
+</section>
+
+<section class="reveal" aria-labelledby="work-h">
+  <h2 class="eyebrow" id="work-h">Movement to cash: what I built</h2>
+  <ul class="work">
+    <li>
+      <h3 class="headline"><span class="metric">€62.9M</span> invoiced &amp; collected</h3>
+      <p class="detail">The approach-fee billing service I built in Node.js (v1 solo, 2021) for a national air-navigation services provider: movements in from the airports, MTOW-based fees per landing, fee notices out, collection behind it. All-time.</p>
+    </li>
+    <li>
+      <h3 class="headline"><span class="metric">~90%</span> of movements matched to the paying party without a person</h3>
+      <p class="detail">Early on I ran the monthly billing rounds by hand myself, and automated once the manual runs had taught me the real rules. Peak month: 10,856 movements, 363 fee notices, one operator running the round.</p>
+    </li>
+    <li>
+      <h3 class="headline">Collections: a dunning service built from scratch</h3>
+      <p class="detail">Escalation levels on a schedule, letters, fees, debtor blocking, a person approving every batch. The ledger is the single source of truth: a posted payment closes the case on its own. Bank-statement matching: ~80% of incoming customer payments match fully automatically, ~97% get a candidate.</p>
+    </li>
+    <li>
+      <h3 class="headline">Airport-side billing and the pilot-facing portal</h3>
+      <p class="detail">A large part of the airport management system, module by module: recurring charges, importers for debtors, aircraft and fee schedules, credit notes, quotes, aircraft ownership history. The operator portal, architected and led from 2020: card and SEPA payments with 3D&nbsp;Secure, self-onboarding without a login.</p>
+    </li>
+  </ul>
+  <p class="work-note"><span class="plus" aria-hidden="true">+</span><span><b>Books that agree:</b> DATEV end to end, XRechnung / EN&nbsp;16931 with a validator, an SAP&nbsp;FI interface taken solo to two production go-lives with written customer sign-offs, BMD and CEGID exports; the Stripe Connect layer re-architected into a central payment service.</span></p>
+</section>
+
+<section class="reveal section-center" aria-labelledby="how-h">
+  <h2 class="eyebrow" id="how-h">How I work</h2>
+  <div class="prose">
+    <p><strong>A change is mine until it is live and quiet</strong>: I deployed it, watched it, and when it broke the ticket came to me. I was the <strong>escalation point</strong> for billing and accounting questions, diagnosed from the database and the logs.</p>
+    <p><strong>Money in exact decimals.</strong> An <strong>idempotency key with a unique index</strong> behind it, because two processors will race. Every billed operation carries the <strong>evidence it was billed on</strong>, so a dispute is a lookup and not an argument. A migration is done when <strong>old and new produce the same invoices</strong> for a closed period, to the cent: that is how the billing domain left the legacy shop system, and how <strong>~14,000 lines</strong> of boilerplate left the core backend behind a <strong>zero-diff harness</strong>.</p>
+    <p><strong>Tests and CI as the back-pressure</strong>: in-process <strong>transactional acceptance tests</strong>, <strong>GitHub Actions</strong>, <strong>Playwright</strong> end to end, static analysis on every commit. <strong>AI tooling heavily and with verification</strong>: plan first, a second model cross-checks, tests, then <strong>human review on every pull request</strong>.</p>
+  </div>
+</section>
+
+<section class="reveal section-center" aria-labelledby="stack-h">
+  <h2 class="eyebrow" id="stack-h">Stack</h2>
+  <ul class="stack-rows">
+    <li>
+      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+      <span><b>Production:</b> Node.js/Express, PHP/Laravel, SQL (MySQL/MariaDB: schema design, indexing, locking on billing tables), MongoDB</span>
+    </li>
+    <li>
+      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+      <span><b>Infra &amp; testing:</b> Docker, RabbitMQ, GitHub Actions (self-hosted runners), PHPUnit, Codeception, Jest, PHPStan, Playwright</span>
+    </li>
+    <li>
+      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+      <span><b>Payments &amp; accounting:</b> Stripe Connect, SEPA, bank-statement reconciliation, DATEV, SAP&nbsp;FI, XRechnung / EN&nbsp;16931</span>
+    </li>
+  </ul>
+  <div class="prose">
+    <p>I ramp quickly on new stacks and have taken over and modernized unfamiliar production codebases before.</p>
+  </div>
+</section>
+
+<section class="reveal section-center" aria-labelledby="lang-h">
+  <h2 class="eyebrow" id="lang-h">Languages</h2>
+  <ul class="langs">
+    <li><span class="lang-name">Portuguese</span><span class="lang-meta">Native</span></li>
+    <li><span class="lang-name">English</span><span class="lang-meta">Fluent</span></li>
+    <li><span class="lang-name">German</span><span class="lang-meta">Fluent · TestDaF 5/5/5/4</span></li>
+    <li><span class="lang-name">French</span><span class="lang-meta">B2</span></li>
+  </ul>
+</section>
+
+<section class="reveal section-center" aria-labelledby="bg-h">
+  <h2 class="eyebrow" id="bg-h">Background</h2>
+  <div class="prose">
+    <p>Remote from Brazil for five of the six years, as an independent contractor through my own company: a contract between the companies and a monthly invoice. The whole US business day is inside my working day.</p>
+    <p>B.Sc. Computer Science in progress (Uniritter, expected 2027); earlier coursework at TU&nbsp;Dresden. Before that, a technical high school for electronics, where the first programs were assembly and C on microcontrollers. ICYS Gold Medal (Stuttgart) and FEBRACE 2nd place for <a href="/assets/haptikos_banner.pdf" target="_blank" rel="noopener">HAPTIKOS</a>, a wearable for deafblind users; Weizmann Institute summer research scholarship.</p>
+  </div>
+</section>
+
+<section class="reveal section-center" aria-labelledby="contact-h">
+  <h2 class="eyebrow" id="contact-h">Get in touch</h2>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="mailto:contact@gabrielschutz.de">Email me</a>
+    <a class="btn btn-ghost" href="/assets/Gabriel-Schutz-CV-EN-full.pdf" download="Gabriel-Schutz-CV-EN.pdf">Download CV <span class="pdf">EN · PDF</span></a>
+  </div>
+  <ul class="contact-links">
+    <li><a href="mailto:contact@gabrielschutz.de">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7 10-7"/></svg>
+      Email</a></li>
+    <li><a href="https://www.linkedin.com/in/gabriel-schuetz" rel="me noopener" target="_blank">
+      <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+      LinkedIn</a></li>
+    <li><a href="https://github.com/gabrielgydu" rel="me noopener" target="_blank">
+      <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.2 3.44 9.6 8.21 11.16.6.11.82-.26.82-.58 0-.29-.01-1.04-.02-2.05-3.34.71-4.04-1.58-4.04-1.58-.55-1.37-1.34-1.74-1.34-1.74-1.09-.74.08-.72.08-.72 1.2.08 1.84 1.22 1.84 1.22 1.07 1.8 2.81 1.28 3.5.98.11-.76.42-1.28.76-1.57-2.67-.3-5.47-1.31-5.47-5.83 0-1.29.47-2.34 1.24-3.17-.12-.3-.54-1.52.12-3.16 0 0 1.01-.32 3.3 1.21.96-.26 1.98-.39 3-.4 1.02.01 2.04.14 3 .4 2.28-1.53 3.29-1.21 3.29-1.21.66 1.64.24 2.86.12 3.16.77.83 1.24 1.88 1.24 3.17 0 4.53-2.81 5.53-5.49 5.82.43.36.81 1.09.81 2.2 0 1.59-.01 2.87-.01 3.26 0 .32.22.7.83.58A12.01 12.01 0 0 0 24 12.29C24 5.78 18.63.5 12 .5z"/></svg>
+      GitHub</a></li>
+  </ul>
+  <p class="refs">References available: a signed reference from the aerops CEO, and written customer sign-offs on production go-lives.</p>
+</section>
